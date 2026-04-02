@@ -12,10 +12,10 @@ load_dotenv()
 USER = os.getenv("TAPO_USER")
 PASS = os.getenv("TAPO_PASS")
 IP = os.getenv("TAPO_IP")
-OUTPUT_DIR = os.getenv("OUTPUT_DIR", "recorders_tapo")
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", "recordings")
 MIN_AREA = int(os.getenv("MIN_AREA", 5000))
 LIMIT_MB = int(os.getenv("LIMIT_GB", 90)) * 1024
-COOLDOWN_SECONDS = int(os.getenv("COOLDOWN_SECONDS", 50))    
+COOLDOWN_SECONDS = int(os.getenv("COOLDOWN_SECONDS", 60))    
 
 URL_DETECCAO = f"rtsp://{USER}:{PASS}@{IP}:554/stream2"
 URL_GRAVACAO = f"rtsp://{USER}:{PASS}@{IP}:554/stream1"
