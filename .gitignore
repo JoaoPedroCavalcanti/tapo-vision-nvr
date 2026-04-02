@@ -1,0 +1,18 @@
+# Credenciais (NUNCA SUBIR)
+.env
+
+# Ambiente Virtual
+.venv/
+env/
+venv/
+ENV/
+
+# Dados e Logs
+gravacoes_tapo/
+*.mkv
+*.mp4
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
