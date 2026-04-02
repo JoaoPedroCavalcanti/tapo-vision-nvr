@@ -62,7 +62,8 @@ TAPO_IP=192.168.x.x
 
 # NVR settings
 OUTPUT_DIR=recordings
-LIMIT_GB=90
+# 90GB = 90 * 1024 MB
+LIMIT_MB = 92160 
 COOLDOWN_SECONDS=60
 MIN_AREA=5000
 ```
@@ -79,7 +80,7 @@ On Windows, use `run_nvr.bat` for background execution (activates `.venv` and ru
 
 ## ✅ Pre-commit checklist
 
-1. **Entry script**: Treat `monitor.py` as the canonical entry point; rename any legacy file (e.g. `camera_sala.py`) before `git add` if it still exists in your tree.
+1. **Entry script**: Treat `monitor.py` as the canonical entry point; rename any legacy file (e.g. `monitor.py`) before `git add` if it still exists in your tree.
 2. **Environment defaults**: Keep `os.getenv("OUTPUT_DIR", "recordings")` consistent with this README.
 3. **Logs**: If log volume grows, consider moving `nvr_status.log` under a dedicated `logs/` directory.
 
