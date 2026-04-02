@@ -21,5 +21,5 @@ A lightweight, resilient Network Video Recorder (NVR) built with Python for TP-L
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/tapo-vision-nvr.git](https://github.com/your-username/tapo-vision-nvr.git)
+   git clone [https://github.com/JoaoPedroCavalcanti/tapo-vision-nvr](https://github.com/your-username/tapo-vision-nvr.git)
    cd tapo-vision-nvr
